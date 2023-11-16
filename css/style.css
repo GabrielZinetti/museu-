@@ -1,0 +1,396 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500&family=Secular+One&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Quicksand:wght@400;500&family=Secular+One&display=swap');
+
+
+HTML{
+scroll-behavior: smooth;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    color: #242424;
+    font-family: sans-serif;
+    word-wrap: break-word;
+    overflow-wrap:break-word ;
+}
+
+a:link{
+    text-decoration: none;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-weight: 900;
+    color: black;
+}
+
+.wrapper{
+    width: 100%;
+    margin: 0 auto;
+}
+.logo{
+    font-size: 30px;
+    text-transform: uppercase;
+    letter-spacing: 0px;
+    color:#4B4035;
+    font-weight: bold;
+    font-family:'Archivo Black', sans-serif;
+}
+
+nav{
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    justify-content: space-around;
+    align-items: center;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+    background: #DCDCDC;
+    height: 10vh;
+    width: 100vw;
+    z-index: 50;
+    
+}
+
+.nav-list{
+list-style: none;
+display: flex;
+}
+
+.nav-list li{
+    color: #4B4035;
+letter-spacing: 1.5px;
+margin-left: 50px;
+
+}
+
+main{
+    display: block;
+    background-color: white;
+}
+
+
+.title{
+    font-family: 'Archivo Black', sans-serif;
+    font-size: 90px;
+    padding-right: 10%;
+    padding-left: 2%;
+    line-height: 0.8;
+}
+
+
+.container{
+    width: 100%;
+    max-width: 90%;
+    margin: 0 auto;
+    padding: 80px 100px ;
+}
+
+section.module p{
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+    font-size: medium;
+    
+}
+
+
+section.module:last-child{
+    margin-bottom: 0;
+}
+
+
+
+section.module.content{
+    padding: 40px 0;
+    background-color: #DCDCDC;
+    display: flex;
+    
+}
+
+section.module.content-info{
+    padding-left: 2%;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.container-info{
+    display: none;
+   width: 100%;
+    padding: 0 100px;
+    max-width: 100%;  
+}
+
+
+.unimogi{
+    height: 100px;
+    width: 100px;
+    padding-left:23%;
+    padding-top: 2%;
+}
+
+.hide{
+    display:block;
+}
+.preco{
+    margin-bottom: 0;
+}
+
+.button, .button-requa{
+    background-color: white; 
+    border: none!important; 
+    cursor: pointer;
+    font-family: 'Archivo Black', sans-serif;
+    font-size: 100px;
+    font-weight: bold;
+    margin: 3%;
+    display: flex;
+}
+.button-requa{
+    background-color:#DCDCDC ;
+}
+.button:hover {
+    border:none!important;
+    background-color: white!important;
+}
+span.separador-claro {
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: #b5b7ba;
+}
+
+.mapa iframe{
+    padding-top: 20px;
+    width: 100%;
+    height: 400px;
+    box-shadow: 0 0 5px #999;
+    border-radius: 10px;
+
+}
+section.module.parallax{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh !important;
+    width: 100%;
+    overflow: hidden;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+}
+
+section.module.mid{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 75vh !important;
+    width: 100%;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    margin-top: 0%;
+    /*background-attachment:fixed;*/
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+}
+
+div.seta-baixo{
+    flex-direction: column-reverse;
+    width: 40px;
+    height: 40px;
+    background-image: url("/Imagens/seta.png");
+    background-size: contain;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+   
+    animation-name: setaBaixo;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+
+}
+
+@keyframes setaBaixo{
+    0%{
+        top: 90%;
+    }
+    100%{
+        top:95%;
+    }
+}
+
+
+
+
+
+/*section.module.parallax:after{
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 8;
+    background: -moz-linear-gradient(to bottom,rgba(0,0,0,0)0, rgba(0,0,0,0) 40%, #000 100% );
+    background: -webkit-linear-gradient(to bottom, rgba(0,0,0,0)0, rgba(0,0,0,0) 40%, #000 100%);
+    background: linear-gradient(to bottom,rgba(0,0,0,0)0, rgba(0,0,0,0) 40%, #000 100%);
+}*/
+
+section.module.parallax-1{
+    background-image: url("/Imagens/03.jpeg");
+}
+
+
+
+section.module.parallax-3{
+    background-image: url("/Imagens/loading.gif");
+}
+
+
+section.module.parallax h1{
+    color: white;
+    text-align: center;
+    font-size: 78px;
+    text-transform: uppercase;
+}
+
+.area-1, .area-2, .area-3{
+    visibility: hidden;
+}
+
+.footer{
+    height: 20vh;
+    background-color: #DCDCDC;
+}
+
+@media (max-width: 768px) {
+    nav {
+      height: auto; /* Ajuste a altura do menu de navegação conforme necessário */
+      flex-direction: column; /* Alinhar verticalmente os itens do menu */
+    }
+  
+    .container {
+      padding: 40px 20px; /* Reduza o preenchimento para o conteúdo principal */
+    }
+  
+    .title {
+      font-size: 60px; /* Reduza o tamanho do título */
+    }
+  
+    section.module p {
+      font-size: small; /* Reduza o tamanho do texto do conteúdo */
+    }
+  }
+  .carousel {
+    display: flex;
+    
+    width: 100%;
+    max-width: 100%;
+    position: relative;
+    overflow: hidden;
+
+    
+  }
+  
+  .carousel img {
+    width: 100%;
+    transition: transform 0.5s ease-in-out;
+    width: 100%; /* A largura das imagens ocupará 100% da largura da tela */
+    height: 100vh; /* A altura das imagens ocupará 100% da altura da tela */
+    object-fit: cover; /* Isso fará com que as imagens preencham o espaço sem distorção */
+  }
+  
+  /* Estilos para dispositivos com largura máxima de 480px (tamanho de smartphone) */
+  @media (max-width: 800px) {
+   
+
+    .logo {
+      font-size: 24px; /* Reduza o tamanho do logotipo */
+    }
+  
+    .title {
+      font-size: 40px; /* Reduza ainda mais o tamanho do título */
+    }
+  
+    .container {
+      padding: 20px 10px; /* Reduza o preenchimento ainda mais */
+    }
+  
+    section.module p {
+      font-size: x-small; /* Reduza ainda mais o tamanho do texto do conteúdo */
+    }
+  
+    .button, .button-requa {
+      font-size: 24px; /* Reduza o tamanho dos botões */
+    }
+  
+    .mapa iframe {
+      height: 300px; /* Reduza a altura do mapa incorporado */
+    }
+
+    #sobre {
+     padding: 20px; /* Reduz o preenchimento para dispositivos móveis */
+    }
+      
+    #sobre h2 {
+        font-size: 24px; /* Reduz o tamanho do título */
+    }
+      
+    #sobre .container p {
+        font-size: 16px; /* Reduz o tamanho do texto */
+        line-height: 1.5; /* Ajusta o espaçamento entre linhas do texto */
+    }
+    #sobre {
+        display: flex;
+        flex-direction: column; /* Empilha os elementos verticalmente */
+      }
+    
+      #sobre .title {
+        order: 1; /* Coloca a div com a classe "title" no topo */
+      }
+    
+      #sobre .container {
+        order: 2; /* Coloca a div com a classe "container" abaixo da div "title" */
+      }
+      .container-info {
+        width: 95%;
+        padding: 10px; /* Ajuste o preenchimento conforme necessário */
+      }
+    
+      .container-info p, .container-info h2 {
+        font-size: 16px; /* Reduza o tamanho da fonte conforme necessário */
+        line-height: 1.5; /* Ajuste o espaçamento entre linhas do texto */
+      }
+      nav {
+        text-align: center;
+      }
+      
+      .nav-list {
+        list-style: none;
+        display: inline-block; /* Para manter os itens da lista na mesma linha */
+        padding: 0; /* Para remover o espaçamento padrão da lista */
+      }
+      
+      .nav-list li {
+        display: inline; /* Para que os itens da lista fiquem na mesma linha */
+        margin: 0 20px; /* Espaçamento entre os itens (ajuste conforme necessário) */
+      }
+
+      .carousel {
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+      }
+    
+      .carousel img {
+        max-width: 100%; /* Redimensiona a imagem para se ajustar à largura da tela */
+        height: auto; /* Mantém a proporção da imagem */
+        margin-right: 10px; /* Espaçamento entre as imagens (ajuste conforme necessário) */
+      }
+     
+      
+  }
